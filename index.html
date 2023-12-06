@@ -1,47 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>MyNote</title>
-    <script
-      defer
-      class="remove"
-      src="https://www.w3.org/Tools/respec/respec-w3c"
-    ></script>
-    <script class="remove">
-      // See: https://respec.org/docs/ for all configuration options
-      var respecConfig = {
-        shortName: "my-note",
-        specStatus: "ED", // "WG-NOTE"
-        noRecTrack: true,
-        edDraftURI: "https://w3c.github.io/mynote/",
-        editors: [
-          {
-            name: "Victor Hugo",
-            w3cid: "0000",
-          },
-        ],
-        group: "webperfs", // find your group at https://respec.org/w3c/groups/
-        github: {
-          repoURL: "w3c/mynote",
-          branch: "master",
-        },
-      };
-    </script>
-  </head>
-  <body>
-    <section id="abstract">
-      <p>This is a Note.</p>
-    </section>
-    <section id="sotd">
-      <p>This is a placeholder document.</p>
-    </section>
-    <section id="purpose">
-      <h2>Purpose</h2>
-      <p>
-        This is a placeholder. Check the
-        <a href="https://respec.org/docs/">ReSpec documentation</a>.
-      </p>
-    </section>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>The Web is Not Versioned</title>
+  <script
+    defer
+    class="remove"
+    src="https://www.w3.org/Tools/respec/respec-w3c"
+  ></script>
+  <script class="remove">
+    var respecConfig = {
+      shortName: "the-web-is-not-versioned",
+    	specStatus: "draft-finding",
+    	editors: [
+    		{
+    			name: "Sangwhan Moon",
+    			url: "",
+    			company: "Google",
+    		},
+      ],
+      noRecTrack: true,
+      edDraftURI: "https://w3ctag.github.io/the-web-is-not-versioned/",
+      group: "tag",
+    	wgPublicList: "www-tag",
+    	github: "w3ctag/caching-bundling-sustainability",
+    	format: "markdown",
+    	localBiblio: {},
+    };
+  </script>
+</head>
+<body>
+<section id="abstract">
+  <p>
+    This is a position finding on the TAG's position on applying versioning concepts
+    against the web, emphasizing the potential risks.
+  </p>
+</section>
+<section id="sotd">
+  <p>This document is an early draft and does not reflect the consensus of the TAG.</p>
+</section>
+
+## Abstract
+
+Some recent efforts have attempted to abuse the web’s established status
+as a platform
+by associating incubating technologies
+and suggesting it as a versioned evolution.
+We declare this as harmful
+and explain why this goes against the principles of the web.
+
+## The modern web does not need versioning
+
+The web has been in [constant evolution](https://www.w3.org/2001/tag/doc/evergreen-web/)
+as a feature - not having unnecessary discussions
+about what feature should be available in what milestone
+allows the community to focus on the merits
+of each technical contribution to the web
+in a distributed, non-political manner,
+allowing it to evolve to where it is now. 
+
+Some years ago, there was a phase of the web
+where new standard development was stagnant,
+and the web was not evolving from a state
+of a collection of interlinked static documents.
+To counter this stagnation, there was a movement
+dubbed “Web 2.0” to rejuvenate the web
+into its next stage of evolution.
+This idea included concepts
+such as interactive web applications,
+arguably ushering in what we now think of as the modern web.
+However, the 2.0 moniker was not intended to be
+considered a version in the sense that software is versioned.
+
+The web as a platform never has and never will be
+versioned at a platform level.
+While independent specifications have versions, collectively,
+all of the technologies that form the web
+have complex inter-specification dependencies driven by a large community,
+and this nature effectively makes it
+intractable to declare a version.
+Efforts such as [Baseline](https://developer.mozilla.org/en-US/docs/Glossary/Baseline/Compatibility)
+are distinct from the concept of versioning,
+as this is fundamentally a concept of an unversioned snapshot
+that has interoperability guarantees.
+
+It’s, therefore, inappropriate and potentially confusing
+to the ecosystem, for the web standards community
+to associate web feature sets
+with a version number in the traditional sense of software versioning.
+
+## Incremental evolution as the path forward
+
+The web is a stable platform.
+Enhancements should always be incremental,
+in a positive direction (leave the web better than you found it),
+while breaking as little
+(if possible, ideally zero - for example,
+through [polyfill prototyping](https://www.w3.org/2001/tag/doc/polyfills/))
+content as possible.
+The only reasonable way to do this
+is to improve it through incremental, well-isolated contributions.
+This is especially important
+since unshipping a feature from the web
+requires significantly more effort than shipping the feature.
+
+## Contributions are either part of the web or they are not
+
+As with any software platform, there are two ways to land a technical proposal:
+
+1. Articulate the technical merits of your proposal
+   with clear use cases and get it integrated into the platform through consensus.
+2. Fork the platform.
+
+As the web is a standard-governed platform,
+we only acknowledge proposals that fall under the first criteria.
+Associating a group of non-standardized technologies
+and claiming it as a specific version or evolution of the web
+effectively is going in the direction of the latter -
+and is false marketing, especially if your fork claims to be another web.
+
+## Conclusion
+
+For the above-mentioned reasons,
+we believe that any trend towards versioning the web is harmful,
+and any versioning happening out in the wild is unsanctioned and harmful.
+There is [one web](https://www.w3.org/TR/ethical-web-principles/#oneweb).
+
+</body>
 </html>
